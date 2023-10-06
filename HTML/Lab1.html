@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page1</title>
+  </head>
+  <style>
+    p {
+      padding: 10px;
+      background: black;
+      font-size: 25px;
+      /* line-height: 10px; */
+      color: red;
+      text-align: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    img {
+      margin-top: 50px;
+      border: 10px solid green;
+
+      /* position: relative; */
+      /* flex-direction: column-reverse; */
+    }
+    ::selection {
+      /* color: red; */
+      /* color: pink; */
+      color: green;
+      background: yellow;
+    }
+
+
+
+    img::before{
+    
+
+
+background: #000;
+    }
+    img::after{
+      background: #000;
+    }
+
+    
+    body {
+      background: aqua;
+      /* color: red; */
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <h1>This is heading 1</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam at modi
+      molestias voluptatem alias iste ab quasi excepturi consequatur vel.
+    </p>
+    <a href="#">Google link</a><br />
+    <a href="post-img.jpg">click for new img</a><br />
+    <img src="related-3.jpg" alt="something" height="200px" width="200px" />
+    <h1> </h1>
+  </body>
+</html>

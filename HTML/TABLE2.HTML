@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table Example</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <!-- <title>HTML Table Example</title> -->
+        <style>
+          th,
+          td {
+            border-bottom: 5px solid rgb(234, 74, 74);
+            cursor: pointer;
+          }
+          tr:hover{
+            background: coral;          
+          }
+          th{
+            height: 100px;
+            background: #10cd59;
+            color: white;
+          }
+          tr:nth-child(even){
+            background: #4020cf;
+            color: cadetblue;
+          }
+        </style>
+      </head>
+      <body>
+        <table>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+          <tr>
+            <td colspan="" >Row 1, Cell 1</td>
+            <!-- <td>Row 1, Cell 2</td> -->
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+          </tr>
+        </table>
+      </body>
+    </html>
+  </body>
+</html>

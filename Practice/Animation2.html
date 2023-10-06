@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: beige;
+            margin: 0px;
+            padding: 0px;
+            height: 600px;
+            width: 1320px;
+            border: 2px solid black;
+            display: flex;
+        }
+        h1{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            border-radius: 50%;
+            border: 2px solid black;
+            animation-name: practice;
+            position: relative;
+           
+            animation: practice 3s linear 2s infinite normal ;
+            padding: 10px;
+        }
+        @keyframes practice {
+            0%{
+
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 650px;
+            }
+            50%{
+                top: 350px;
+                left: 650px;
+            }
+            75%{
+
+                top: 350px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+
+        </h1>
+    </div>
+</body>
+</html>

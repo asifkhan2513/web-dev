@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+.first{
+    margin: 10px;
+    
+    background: aqua;
+    /* border:10px; */
+    border-style: solid;
+    padding: 10px;
+    padding-left: 200px;
+    height: 200px;
+    width: 350px;
+}
+.second{
+    margin:10px;
+    margin-left: 0;
+    margin-right: 0px;
+    background:rebeccapurple;
+    border: solid red 5px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+h1{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-style: dark;
+   
+border: solid red  3px;
+background-color: grey;
+    border-radius: 5px;
+    /* height: 150px;
+    width: 350px; */
+}
+p {
+    font-family: Tahoma, Verdana, sans-serif;
+    }

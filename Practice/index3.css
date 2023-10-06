@@ -1,0 +1,39 @@
+.img1{
+
+    width: 140px;
+    height: 140px;
+    border: 3px solid red;
+
+}
+
+.img2{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 140px;
+    height: 140px;
+    border: 3px solid red;
+
+}
+
+.img3{
+    position: absolute;
+    top: 200px;
+    width: 140px;
+    height: 140px;
+    border: 3px solid red;
+
+}
+
+.img4{
+
+    width: 140px;
+    height: 140px;
+    border: 3px solid red;
+
+}
+
+.container{
+    position: relative;
+    border: 3px solid black;
+}
