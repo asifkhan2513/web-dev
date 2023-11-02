@@ -1,6 +1,6 @@
 let today = new Date();
 
-let d= today.toLocaleString();
+let d = today.toLocaleString();
 console.log(d);
 
 let mil= today.getMilliseconds();

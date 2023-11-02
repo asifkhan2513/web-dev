@@ -1,4 +1,4 @@
-const MeasurmentKelvin = function(){
+let MeasurmentKelvin = function(){
     const Measurment ={
         type :'temprature',
         unit :' celcious',
@@ -8,4 +8,4 @@ const MeasurmentKelvin = function(){
     const kelvin = MeasurmentKelvin.value+273;
     return kelvin
 }
-console.log(MeasurmentKelvin())
+console.log(MeasurmentKelvin(value))

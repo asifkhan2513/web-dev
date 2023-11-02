@@ -14,13 +14,14 @@ console.log(typeof c);
 console.log(typeof d);
 console.log(typeof e);
 console.log(typeof f);
+console.log(typeof g)
 
 console.log("----------------------");
 
 // Non primitive data  or  object in js 
 const item = {
     "Asif":true,
-    "kush":false,
+    "khush":false,
     "lavish":67,
     "asif1":undefined
 }

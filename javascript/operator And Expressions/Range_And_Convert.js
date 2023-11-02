@@ -8,7 +8,7 @@ console.log("---------------")
 console.log(" here conversion  in binary octa hexa");
 
 console.log("here is explicit type of conversion");
-let yu= 78;
+let yu = 78;
 let tu= yu.toString();
 let yu_binary= yu.toString(2);
 let yu_oct= yu.toString(8);
