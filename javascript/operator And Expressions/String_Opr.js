@@ -2,7 +2,7 @@ let price =427,str_prince;
 str_prince=price.toString();
 console.log(str_prince);
  
-console.log(" here is string related operation");
+console.log("here is string related operation");
 let a = "Asif";
 let b = "khan";
 let result = a.concat(" ",b);

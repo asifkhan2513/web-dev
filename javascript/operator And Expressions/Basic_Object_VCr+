@@ -1,0 +1,32 @@
+//Math method
+"use strict";
+console.log(Math.random())
+console.log(Math.PI)
+console.log(Math.round(1.8))
+console.log(Math.random(1.2))
+console.log(Math.max(1,2,3,4))
+console.log(Math.min(1,5,8,-9))
+console.log(Math.abs(-2))
+console.log(Math.ceil(1.8))
+
+
+// String  
+console.log("---------------------")
+ let name = "Asif"
+ console.log(typeof name)
+let lastName = new String("Khan") 
+console.log(typeof lastName)
+
+
+console.log("Asif".charAt(2))
+console.log("asif"[1])
+const s1 = "2 + 2"; // creates a string primitive
+const s2 = new String("2 + 2"); // creates a String object
+console.log(eval(s1)); // returns the number 4
+console.log(eval(s2)); // returns the string "2 + 2"
+
+
+
+//Date
+let date = new Date();
+console.log(date)
