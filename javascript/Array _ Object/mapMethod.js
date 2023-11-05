@@ -1,9 +1,9 @@
 const  movements = [200,450,-400,3000,-650,-130,70,1300]
 const  eurToUsd = 1.1;
-// this is frost method
+// this is first method
 
 /*
-this os apporoach first
+this is approach first
 
 const movementUsd =  movements.map(function(mov)
 {
