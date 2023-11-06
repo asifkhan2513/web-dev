@@ -43,3 +43,5 @@ console.log(" my name is  asif khan ")
  para.style.fontWeight = "900"
 para.style.textDecoration = "underline"
 
+
+ // child element of any element

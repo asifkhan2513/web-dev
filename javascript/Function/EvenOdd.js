@@ -11,3 +11,9 @@ function eo(){
     }
 }
 eo()
+
+
+//here is start arrow funcion
+
+let asif = (a, b) => a+b;
+ console.log(asif(5,6))
