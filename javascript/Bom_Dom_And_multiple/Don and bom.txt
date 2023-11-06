@@ -1,0 +1,7 @@
+ // there 4 main pillor of Dom
+
+  // selectio of an element 
+  // changing in html
+  
+  // change in  css
+  // event listner
