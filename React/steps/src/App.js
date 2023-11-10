@@ -4,7 +4,7 @@ const messages = [
   "Invest your new income 🤑",
 ];
 export default function App() {
-  const step = 2;
+  const step = 1;
 
   return (
     <div className="steps">
