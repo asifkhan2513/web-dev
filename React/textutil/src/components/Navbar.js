@@ -1,9 +1,10 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
+import "./TextForm.css";
 
 export default function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           {props.tittle}
@@ -33,23 +34,23 @@ export default function Navbar(props) {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <input
+            {/* <input
               className="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
+            /> */}
+            {/* <button className="btn btn-success" type="submit">
               {props.submit}
-            </button>
+            </button> */}
           </form>
         </div>
       </div>
     </nav>
   );
 }
-Navbar.propTypes ={
+Navbar.propTypes = {
   tittle: PropTypes.string,
-  about : PropTypes.string,
-  search: PropTypes.string
-}
+  about: PropTypes.string,
+  search: PropTypes.string,
+};

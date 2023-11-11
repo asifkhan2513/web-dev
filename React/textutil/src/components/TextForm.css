@@ -1,0 +1,11 @@
+.lower {
+  /* margin-right: z;: 500px; */
+  /* display: flex; */
+  margin-left: 350px;
+  text-align: center;
+  justify-content: center;
+  /* transform; */
+}
+.underline {
+  text-decoration: underline;
+}
