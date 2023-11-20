@@ -11,8 +11,9 @@ import Spinner from "./components/Spinner";
 import { toast } from "react-toastify";
 
 function App() {
-  const [loading, setLoading] = useState(true);
   const [courses, setCourse] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [category, setCategory] = useState(filterData[0].title);
   //let apiUrl= https://codehelp-apis.vercel.app/api/get-top-courses
   async function fetchData() {
     setLoading(true);
@@ -29,16 +30,24 @@ function App() {
     fetchData();
   }, []);
   return (
-    <div>
+    <div className="min-h-screen flex flex-col bg-bgDark2">
       <div className="bg-bgDark py-4">
         <Navbar />
       </div>
       <div className="bg-bgDark2">
         <div>
-          <Filter filterData={filterData}></Filter>
+          <Filter
+            filterData={filterData}
+            category={category}
+            setCategory={setCategory}
+          ></Filter>
         </div>
         <div className="w-11/12 max-w-[1200px] mx-auto flex justify-center flex-wrap items-center min-h=[50vh]">
-          {loading ? <Spinner /> : <Cards courses={courses} />}
+          {loading ? (
+            <Spinner />
+          ) : (
+            <Cards courses={courses} category={category} />
+          )}
         </div>
       </div>
     </div>

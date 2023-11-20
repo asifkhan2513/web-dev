@@ -3,16 +3,21 @@ import Card from "./Card";
 
 const Cards = (props) => {
   let courses = props.courses;
+  let category = props.category;
   console.log(courses);
   const [likedCourses, setLikedCourses] = useState([]);
   function getAllCourses() {
-    const allCourses = [];
-    Object.values(courses).forEach((array) => {
-      array.forEach((coursesData) => {
-        allCourses.push(coursesData);
+    if (category === "All") {
+      const allCourses = [];
+      Object.values(courses).forEach((array) => {
+        array.forEach((coursesData) => {
+          allCourses.push(coursesData);
+        });
       });
-    });
-    return allCourses;
+      return allCourses;
+    } else {
+      return courses[category];
+    }
   }
   return (
     <div className=" flex flex-wrap justify-center gap-4 mb-4">
