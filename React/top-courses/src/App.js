@@ -30,13 +30,17 @@ function App() {
   }, []);
   return (
     <div>
-      <div>
+      <div className="bg-bgDark py-4">
         <Navbar />
       </div>
-      <div>
-        <Filter filterData={filterData}></Filter>
+      <div className="bg-bgDark2">
+        <div>
+          <Filter filterData={filterData}></Filter>
+        </div>
+        <div className="w-11/12 max-w-[1200px] mx-auto flex justify-center flex-wrap items-center min-h=[50vh]">
+          {loading ? <Spinner /> : <Cards courses={courses} />}
+        </div>
       </div>
-      <div>{loading ? <Spinner /> : <Cards courses={courses} />}</div>
     </div>
   );
 }
