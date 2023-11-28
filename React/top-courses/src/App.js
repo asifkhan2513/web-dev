@@ -34,7 +34,7 @@ function App() {
       <div className="bg-bgDark py-4">
         <Navbar />
       </div>
-      <div className="bg-bgDark2">
+      <div className=" bg-gradient-to-t from-red-600 via-white to-green-400 ">
         <div>
           <Filter
             filterData={filterData}
