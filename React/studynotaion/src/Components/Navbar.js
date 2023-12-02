@@ -40,7 +40,7 @@ const Navbar = (props) => {
                 toast.success("Sign in");
               }}
             >
-              Sign In{" "}
+              Sign up{" "}
             </button>
           </Link>
         )}
