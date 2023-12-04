@@ -1,7 +1,3 @@
-import React from "react";
-
-const Logo = () => {
-  return <div></div>;
-};
-
-export default Logo;
+export default function Logo() {
+  return <h1>🏝️ Far Away 🧳</h1>;
+}
