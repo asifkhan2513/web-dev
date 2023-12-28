@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1 initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #box {
+        border: 2px solid red;
+        height: 200px;
+        width: 70px;
+        background-color: cyan;
+      }
+      .red {
+        border: 2px solid red;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-top: 5px;
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+        border: 2px solid green;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      .yellow {
+        background-color: yellow;
+        border: 2px solid rgb(255, 255, 12);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      h1 {
+        border: 2px solid black;
+        align-items: center;
+        justify-content: center;
+        /* flex: content; */
+        padding-left: 650px;
+        font-weight: 700;
+      }
+      .main {
+        /* margin-top: 10px; */
+        margin: 10px 10px;
+        background-color: rgb(54, 199, 199);
+        padding-left: 680px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Traffic Light</h1>
+    <div class="main">
+      <div id="box">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,7 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../contex/AppContext";
 
 const Pagination = () => {
-  return <div></div>;
+  const { page, handlerPageChange, totalPages } = useContext(AppContext);
+
+  return (
+    <div className="w-full flex  justify-center items-center border-2 fixed bottom-0 bg-white">
+      <div className="flex justify-between w-11/12 max-w-[670px] py-2">
+        <div className="flex gap-x-2">
+          {page > 1 && (
+            <button
+              onClick={() => handlerPageChange(page - 1)}
+              className="rounded-md border-2 px-4 py-1"
+            >
+              Previous
+            </button>
+          )}
+          {page < totalPages && (
+            <button
+              onClick={() => handlerPageChange(page + 1)}
+              className="rounded-md border-2 px-4 py-1"
+            >
+              Next
+            </button>
+          )}
+        </div>
+
+        <p className="font-bold text-sm">
+          page {page} of {totalPages}
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Pagination;

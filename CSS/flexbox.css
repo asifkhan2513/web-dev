@@ -1,0 +1,13 @@
+.container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+.box {
+  border: 2px solid red;
+  height: 50px;
+}

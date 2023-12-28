@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #wrapper {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 10px;
+      }
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transform-style: preserve-3d;
+        z-index: -1;
+      }
+      .background {
+        transform: translateZ(-40px) scale(5);
+      }
+      .foreground {
+        transform: translateZ(-20px) scale(3);
+      }
+      .background,
+      .foreground {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        object-fit: cover;
+      }
+      h1 {
+        position: absolute;
+        top: 5rem;
+        font-size: 10rem;
+        color: white;
+        letter-spacing: 4px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .section {
+        /* background-color: rgb(45, 45, 45); */
+        position: relative;
+        background-color: rgb(45, 45, 45);
+        color: white;
+        padding: 5rem 0;
+      }
+      .secHeading {
+        font-size: 5rem;
+        padding: 0 10rem;
+      }
+      .text {
+        font-size: 1.5rem;
+        padding: 0 10rem;
+        margin: 5rem 0;
+      }
+      .desc {
+        position: absolute;
+        background-color: #fff;
+        padding: 0.5rem 2.5rem;
+        top: 50%;
+        left: 50%;
+        font-size: 3.5rem;
+        font-weight: 400;
+        color: black;
+        transform: translateX(-50%) translateX(-50%);
+      }
+      .bg {
+        position: relative;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+      }
+      .bg1 {
+        background-image: url(./img/sport-1.jpg);
+      }
+      .bg2 {
+        background-image: url(./img/sport-2.jpg);
+      }
+      .bg3 {
+        background-image: url(./img/sport-3.jpg);
+      }
+
+      .contact {
+        position: absolute;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: azure;
+        font-family: "Courier New", Courier, monospace;
+        left: 47%;
+        text-decoration: underline;
+      }
+      .copyright {
+        /* position: absolute; */
+        /* top: 5rem; */
+
+        left: 40%;
+        /* font-size: 20px; */
+        font-weight: 500;
+        color: cadetblue;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+      }
+      .h-6 {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        left: 50%;
+      }
+      .h-7 {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        left: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <img src="./img/background.png" alt="bgimage" class="background" />
+        <img src="./img/foreground.png" alt="foreground" class="foreground" />
+        <h1>Adventure</h1>
+      </div>
+
+      <section class="section">
+        <h2 class="secHeading">Adventure Time !</h2>
+        <p class="text">
+          "Adventure Time" is a whimsical and imaginative animated series that
+          follows the adventures of Jake the Dog and Finn the Human in the Land
+          of Ooo. Created by Pendleton Ward, the show is renowned for its unique
+          blend of humor, surrealism, and underlying emotional depth. The
+          dynamic duo traverses through a vibrant and fantastical world filled
+          with quirky characters, including Princess Bubblegum, the Ice King,
+          and Marceline the Vampire Queen. As they embark on quests and face
+          various challenges, the series unfolds a rich narrative exploring
+          friendship, personal growth, and the power of imagination. With its
+          colorful animation, catchy musical moments, and a touch of
+          post-apocalyptic mystery
+          <br /><br />
+          "Adventure Time" is a delightful journey through a post-apocalyptic
+          world, featuring the endearing duo of Jake and Finn, who navigate a
+          landscape teeming with magic, humor, and heart. With its offbeat charm
+          and universal themes, the show has become a beloved classic in the
+          realm of animated entertainment.
+        </p>
+        <div class="bg bg1">
+          <h2 class="desc">BIKING</h2>
+        </div>
+        <p class="text">
+          Biking is a liberating experience, as the wind rushes past and the
+          rhythmic pedaling propels you forward. Whether cruising along scenic
+          trails or navigating city streets, cycling provides a unique
+          connection to the surroundings and a sense of freedom. From the thrill
+          of downhill descents to the joy of leisurely rides, biking offers both
+          a physical workout and a refreshing escape into the great outdoors.
+          <br /><br />
+          Embracing biking fosters a sustainable and eco-friendly mode of
+          transportation, promoting a healthier lifestyle while reducing one's
+          carbon footprint. The simple act of pedaling not only invigorates the
+          body but also serves as a meditative escape, allowing riders to unwind
+          and connect with the beauty of their surroundings.
+        </p>
+
+        <div class="bg bg2">
+          <h2 class="desc">PARA GLIDING</h2>
+        </div>
+        <p class="text">
+          Paragliding is an exhilarating adventure sport that combines the
+          thrill of free-fall with the serenity of soaring above landscapes like
+          a bird. Suspended beneath a parachute-like wing, participants harness
+          wind currents to gracefully glide through the air. Whether soaring
+          above mountainous terrains or coastal cliffs, paragliding offers an
+          unparalleled perspective, providing both an adrenaline rush and a
+          breathtaking view of the world below. It's an experience that blends
+          the excitement of flight with the tranquility of being suspended in
+          nature, making it a favorite among thrill-seekers and nature
+          enthusiasts alike. <br /><br />
+          As paragliders catch thermal updrafts, they can stay aloft for
+          extended periods, allowing for a unique and serene airborne journey.
+          The sport's accessibility and relatively simple learning curve make it
+          an enticing option for those seeking a taste of airborne adventure and
+          the unmatched joy of gliding through the open sky.
+        </p>
+
+        <div class="bg bg3">
+          <h2 class="desc">SURFING</h2>
+        </div>
+        <p class="text">
+          Surfing is a dynamic water sport that encapsulates the thrill of
+          riding ocean waves atop a surfboard. Surfers skillfully navigate the
+          ebb and flow of the sea, harnessing the energy of breaking waves to
+          propel themselves forward. It's a sport that demands a harmonious
+          dance with nature, requiring balance, agility, and a deep connection
+          with the rhythm of the ocean. From the adrenaline rush of catching the
+          perfect wave to the Zen-like state experienced while waiting for the
+          next set, surfing is not just a sport but a lifestyle embraced by
+          enthusiasts around the globe. It's a captivating blend of athleticism
+          and communion with the vast, powerful forces of the sea.
+          <br /><br />
+          The culture of surfing extends beyond the waves, fostering a
+          tight-knit community that celebrates the ocean's beauty and the
+          camaraderie among surfers. Whether carving through barrels or
+          mastering maneuvers, surfing embodies a profound connection to the
+          elements, making it a sport that transcends the physical act of riding
+          waves, becoming a soulful and transformative experience.
+        </p>
+        <hr />
+        <hr />
+        <div>
+          <div class="contact">Contact me</div>
+          <br />
+          <div>
+            <br />
+            <br /><br />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-7"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z"
+              />
+            </svg>
+          </div>
+          <div>
+            <p class="copyright">&copy; Created by Mo Asif .</p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <hr />
+    </div>
+  </body>
+</html>
