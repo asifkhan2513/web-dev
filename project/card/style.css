@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 241, 241);
+}
+.box {
+  /* border: 2px solid red; */
+  height: 400px;
+  width: 750px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 10px;
+  /* top: 50%; */
+}
+img {
+}
+.left > img {
+  height: 398px;
+  width: 50%;
+  float: left;
+  border-radius: 20px 0 0 20px;
+}
+.right > .coffe {
+  margin-top: 10px;
+  font-size: 18px;
+  padding-left: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 6px;
+  justify-content: start;
+  opacity: 0.7;
+}
+/* .right > .heading {
+  margin-top: 30px;
+  text-align: center;
+  justify-content: start;
+} */
+.right > .heading {
+  margin-top: 10px;
+  align-items: center;
+  justify-content: start;
+  font-weight: 600;
+  padding-left: 20px;
+  display: flex;
+  /* font-size: 10px; */
+}
+.right > .mug {
+  /* margin-top: 5px; */
+  align-items: center;
+  justify-content: start;
+  font-weight: 600;
+  padding-left: 20px;
+  display: flex;
+  /* font-size: 10px; */
+}
+.right > .desc {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  /* line-height: 30px; */
+  line-height: normal;
+  /* margin-bottom: 1.5rem; */
+  color: #70768f;
+}
+span {
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
+  /* float: left; */
+  /* margin: 0.6em 0 0.7em 0; */
+  margin-top: 100px;
+  /* background-color: red; */
+  align-items: start;
+  justify-content: start;
+  /* padding-left: -50px; */
+}
+.inr {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #35705a;
+}
+.dicount {
+  font-size: 25px;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.button {
+  /* justify-content: left; */
+  text-align: justify;
+  margin-top: 100px;
+  margin-left: 70px;
+  /* text-align: center; */
+  padding-top: 12px;
+  padding-left: 25px;
+  display: flex;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left: 50%;
+  color: #fff;
+  width: 30%;
+  height: 50px;
+  background-color: #35705a;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.price {
+  font-size: 20px;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  color: #35705a;
+}
