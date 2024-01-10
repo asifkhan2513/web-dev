@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Children, useState } from "react";
 
 const tempMovieData = [
   {
@@ -47,28 +47,33 @@ const tempWatchedData = [
   },
 ];
 export default function App() {
+  const [movies, setMovies] = useState(tempMovieData);
+
   return (
     <>
-      <Navbar />
-      <Main />
+      <Navbar movies={movies}></Navbar>
+      <Main></Main>
     </>
   );
 }
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 function Navbar() {
+  const [movies, setMovies] = useState(tempMovieData);
   return (
     <nav className="nav-bar">
       <Logo />
       <Search />
-      <NumResult />
+      <NumResult movies={movies} />
     </nav>
   );
 }
-function NumResult() {
+function NumResult({ movies }) {
+  // const [movies, setMovies] = useState(tempMovieData);
+
   return (
     <p className="num-results">
-      Found <strong>x component</strong> results
+      Found <strong>{movies.length}</strong> results
     </p>
   );
 }
@@ -93,16 +98,17 @@ function Search() {
     />
   );
 }
-function Main() {
+function Main({ movie }) {
+  const [movies, setMovies] = useState(tempMovieData);
   return (
     <main className="main">
-      <ListMovie />
+      <ListMovie movies={movies} />
       <WatchedMovieList />
     </main>
   );
 }
 
-function ListMovie() {
+function ListMovie({ movies }) {
   const [isOpen1, setIsOpen1] = useState(true);
   return (
     <div className="box">
@@ -112,13 +118,12 @@ function ListMovie() {
       >
         {isOpen1 ? "–" : "+"}
       </button>
-      {isOpen1 && <MovieList />}
+      {isOpen1 && <MovieList movies={movies} />}
     </div>
   );
 }
-function MovieList() {
-  const [movies, setMovies] = useState(tempMovieData);
 
+function MovieList({ movies }) {
   return (
     <ul className="list">
       {movies?.map((movie) => (
