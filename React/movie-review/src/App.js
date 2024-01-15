@@ -1,4 +1,4 @@
-import { Children, useState } from "react";
+import { useState } from "react";
 
 const tempMovieData = [
   {
@@ -46,12 +46,18 @@ const tempWatchedData = [
     userRating: 9,
   },
 ];
+const KEY = "f84fc31d";
+
 export default function App() {
   const [movies, setMovies] = useState(tempMovieData);
-
+  fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=interstellar`)
+    .then((res) => res.json())
+    .then((data) => setMovies(data.Search));
   return (
     <>
-      <Navbar movies={movies}></Navbar>
+      <Navbar movies={movies}>
+        <Search />
+      </Navbar>
       <Main></Main>
     </>
   );
@@ -63,7 +69,6 @@ function Navbar() {
   return (
     <nav className="nav-bar">
       <Logo />
-      <Search />
       <NumResult movies={movies} />
     </nav>
   );
