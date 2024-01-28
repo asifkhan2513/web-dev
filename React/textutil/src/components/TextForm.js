@@ -31,8 +31,7 @@ export default function TextForm(props) {
 
   return (
     <>
-      <div className="container">
-        {/* <h1> {props.heading}</h1> */}
+      <div className="container my-3">
         <h1>{props.heading}</h1>
         <div className="mb-3">
           <label htmlFor="mybox" className="form-label"></label>

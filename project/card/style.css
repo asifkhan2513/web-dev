@@ -131,7 +131,9 @@ span {
   color: #35705a;
 }
 .currency {
+  padding-left: 4.2rem;
   display: flex;
   flex-direction: column;
   float: left;
+  gap: 0.874rem;
 }
