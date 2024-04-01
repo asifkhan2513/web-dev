@@ -1,6 +1,6 @@
  // there 4 main pillor of Dom
 
-  // selectio of an element 
+  // selection of an element 
   // changing in html
   
   // change in  css

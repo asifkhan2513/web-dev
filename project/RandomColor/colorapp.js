@@ -3,6 +3,9 @@ const btn = document.getElementById("btn");
 const color = document.querySelector("color");
 console.log(document.body);
 
+const sd = document.getElementById("sais");
+sd.innerHTML = "Color changer";
+
 btn.addEventListener("click", function () {
   const randomNumber = getRandomNumber();
   console.log("i am here");

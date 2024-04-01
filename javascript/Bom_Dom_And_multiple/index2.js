@@ -1,4 +1,5 @@
 const a = document.querySelector("h1");
+
 console.log(a);
 a.innerHTML = "my name is asif  khan i am  student of mca";
 a.style.alignItems = "center";
