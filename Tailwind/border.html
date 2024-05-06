@@ -1,106 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body>
+    <h1 class="mx-5 text-6xl text-white bg-red-500 text-center">
+      Border Radious
+    </h1>
+    <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-none">
+      Save Changes
+    </div>
+    <br />
+    <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-sm">
+      Save Changes
+    </div>
+    <br />
+    <div class="mx-5 text-5xl bg-yellow-500 text-white rounded">
+      Save Changes
+    </div>
+    <br />
+    <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-lg">
+      Save Changes
+    </div>
+    <br />
+    <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-xl">
+      Save Changes
+    </div>
+    <br />
+    <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-2xl">
+      Save Changes
+    </div>
+    <br />
+    <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-full">
+      Save Changes
+    </div>
+    <br />
+    <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-md rounded-s-sm">
+      Save Changes
+    </div>
+    <br />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <button
+      class="text-5xl bg-pink-500 rounded-full mx-80 py-10 px-12 hover:bg-yellow-500 hover:text-white"
+    >
+      Click me
+    </button>
 
-<>
-  <h1 class="mx-5 text-6xl text-white bg-red-500 text-center">
-    Border Radious
-  </h1>
-  <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-none">
-    Save Changes
-  </div>
-  <br />
-  <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-sm">
-    Save Changes
-  </div>
-  <br />
-  <div class="mx-5 text-5xl bg-yellow-500 text-white rounded">
-    Save Changes
-  </div>
-  <br />
-  <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-lg">
-    Save Changes
-  </div>
-  <br />
-  <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-xl">
-    Save Changes
-  </div>
-  <br />
-  <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-2xl">
-    Save Changes
-  </div>
-  <br />
-  <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-full">
-    Save Changes
-  </div>
-  <br />
-  <div class="mx-5 text-5xl bg-yellow-500 text-white rounded-md rounded-s-sm">
-    Save Changes
-  </div>
-  <br />
-  <hr />
-  <hr />
-  <hr />
-  <hr />
-  <button class="text-5xl bg-pink-500 rounded-full mx-80 py-10 px-12 hover:bg-yellow-500 hover:text-white">
-    Click me
-  </button>
+    <h1 class="text-red-700 text-5xl">Border width</h1>
+    <div
+      class="text-6xl border border-red-500 h-40 w-1/2 text-center py-10 ml-2"
+    >
+      Asif khan
+    </div>
+    <div class="h-40 w-1/3 border border-r-4 border-red-500 mx-3 my-3"></div>
+    <div class="h-40 w-1/3 border border-x-8 border-indigo-500"></div>
+    <div class="h-40 w-1/3 border border-y-8 border-indigo-500 my-5"></div>
+    <h1
+      class="text-5xl text-red-500 bg-indigo-400 border-2 border-dashed border-red-700 capitalize text-center"
+    >
+      border Style
+    </h1>
 
-  <h1 class="text-red-700 text-5xl">Border width</h1>
-  <div class="text-6xl border border-red-500 h-40 w-1/2 text-center py-10 ml-2">
-    Asif khan
-  </div>
-  <div class="h-40 w-1/3 border border-r-4 border-red-500 mx-3 my-3"></div>
-  <div class="h-40 w-1/3 border border-x-8 border-indigo-500"></div>
-  <div class="h-40 w-1/3 border border-y-8 border-indigo-500 my-5"></div>
-  <h1 class="text-5xl text-red-500 bg-indigo-400 border-2 border-dashed border-red-700 capitalize text-center">border
-    Style</h1>
+    <button
+      class="my-3 text-3xl text-white bg-black rounded-lg border-4 border-double border-yellow-400"
+    >
+      Click me
+    </button>
+    <h1
+      class="text-5xl text-white bg-pink-600 border-2 border-dashed border-red-700 capitalize text-center"
+    >
+      Divided Width
+    </h1>
+    <ul class="text-3xl text-white bg-black flex space-x-7">
+      <li>About</li>
+      <li>Home</li>
+      <li>Contact</li>
+    </ul>
+    <h1 class="text-4xl text-center capitalize">this is colspan</h1>
+    <div
+      class="text-3xl grid grid-cols-3 divide-x border-8 border-dotted border-red-700 text-center"
+    >
+      <div>01</div>
+      <div>02</div>
+      <div>03</div>
+    </div>
+    <h1 class="text-4xl text-center capitalize">this is rowspan</h1>
 
+    <div class="text-4xl grid grid-cols-1 divide-y border-4 border-dashed">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <h1 class="text-4xl text-center capitalize my-5">
+      here is color inseting on table line
+    </h1>
+    <hr />
+    <div class="text-4xl grid grid-cols-3 devide-x divide-slate-400/25">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
 
-  <button class=" my-3 text-3xl text-white bg-black rounded-lg border-4  border-double border-yellow-400 ">
-    Click me
-  </button>
-  <h1 class="text-5xl text-white bg-pink-600 border-2 border-dashed border-red-700 capitalize text-center">Divided Width
-  </h1>
-  <ul class="text-3xl text-white bg-black flex space-x-7 ">
-    <li>About</li>
-    <li>Home</li>
-    <li>Contact</li>
-  </ul>
-  <h1 class="text-4xl text-center capitalize">this is colspan</h1>
-<div class="text-3xl grid grid-cols-3 divide-x border-8 border-dotted border-red-700  text-center">
-  <div>01</div>
-  <div>02</div>
-  <div>03</div>
-</div>
-<h1 class="text-4xl text-center capitalize">this is rowspan</h1>
+    <h1 class="text-4xl text-center capitalize">
+      here is color inseting on table line
+    </h1>
 
-<div class="text-4xl grid grid-cols-1 divide-y border-4 border-dashed">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-</div>
-<h1 class="text-4xl text-center capitalize my-5">here is color inseting on table line</h1><hr>
-<div   class="text-4xl grid grid-cols-3 devide-x  divide-slate-400/25">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-</div>
-
-<h1 class="text-4xl text-center capitalize">here is color inseting on table line</h1>
-
-<div class="text-4xl grid grid-cols-1 divide-y divide-blue-600">
-  <div></div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-</div>
-</body>
-
+    <div class="text-4xl grid grid-cols-1 divide-y divide-blue-600">
+      <div></div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
 </html>

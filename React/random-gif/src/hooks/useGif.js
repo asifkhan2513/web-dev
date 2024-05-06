@@ -9,6 +9,7 @@ const url = `https://api.giphy.com/v1/stickers/random?api_key=${API_KEY}`;
 const useGif = (tag) => {
   const [gif, setGif] = useState("");
   const [loader, setLoader] = useState("false");
+
   // const [tag, setTag] = useState("car");
   async function fetchData(tag) {
     setLoader(true);

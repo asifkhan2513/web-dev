@@ -58,4 +58,4 @@ const getCountryAndNieghbour = function (country) {
     console.log(data.name.common); // printing country name
   });
 };
-getCountryAndNieghbour("afghanistan");
+getCountryAndNieghbour("bharat");

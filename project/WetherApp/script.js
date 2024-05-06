@@ -16,6 +16,8 @@ let currTab = userTab;
 const API_KEY = "168771779c71f3d64106d8a88376808a";
 currTab.classList.add("current-tab");
 getfromSessionStorage();
+
+//FIXME:
 function swichTab(clickedTab) {
   if (clickedTab != currTab) {
     currTab.classList.remove("current-tab");
@@ -32,6 +34,7 @@ function swichTab(clickedTab) {
     }
   }
 }
+//TODO:
 userTab.addEventListener("click", () => {
   swichTab(userTab);
 });
