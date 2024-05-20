@@ -39,6 +39,7 @@ initGame();
 function checkGameOver() {
   let answer = "";
   winningPosition.forEach((position) => {
+    
     // all three boxes should be not non empty and exactly same value
     if (
       (gameGrid[position[0]] !== "" ||

@@ -7,14 +7,14 @@
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background-image: url("./images/pexels-martin-péchy-2078266.jpg");
+  background-image: url("./images/linear_gradient-image.jpg");
   background-size: cover;
   background-position: center;
   display: grid;
   place-items: center;
 }
 .game-info {
-  color: rgb(7, 39, 245);
+  color: rgb(242, 242, 244);
   position: absolute;
   top: 3rem;
   left: 50%;
@@ -22,7 +22,7 @@
   border-radius: 1rem;
   padding: 0.5rem 3rem;
   border: 1px solid rgba(234, 70, 70, 0.25);
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgb(55, 15, 235);
 }
 .tic-tac-toe {
   width: 90%;
@@ -63,11 +63,11 @@
   border-right: 2px solid rgb(248, 5, 5);
 }
 .btn {
-  color: white;
+  color: rgb(244, 237, 237);
   position: absolute;
   bottom: 3rem;
   left: 50%;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(10, 10, 10, 0.966);
   border: 1px solid rgba(255, 255, 255, 0.25);
 
   border-radius: 1rem;
