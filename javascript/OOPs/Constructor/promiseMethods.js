@@ -90,7 +90,7 @@ let p12 = new Promise((resolve,reject)=>{
     resolve("Value 3");
   },3000)
 })
-let promise_Any = Promise.Any([p10,p11,p12])
+let promise_Any = Promise.any([p10,p11,p12])
 promise_race.then((Value)=>{
   console.log(Value)
 })

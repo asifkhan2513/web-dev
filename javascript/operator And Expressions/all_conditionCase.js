@@ -10,7 +10,7 @@
  */
 
 // Logical operator
-//  && , || , != etc use  in maximum  conditional condtiona
+//  && , || , != etc use  in maximum  conditional condtion
 
 
  // switch operator 

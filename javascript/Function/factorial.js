@@ -1,5 +1,6 @@
 // let a = prompt(" enter any number ");
 // a = Number.parseInt(a);
+// Recursion Method for find factorial
 function facto(a) {
   if (a === 0 || a === 1) {
     return 1;
@@ -7,5 +8,5 @@ function facto(a) {
     return a* facto(a-1);
   }
 }
-fact = facto(5);
+let fact = facto(5);
 console.log(fact)

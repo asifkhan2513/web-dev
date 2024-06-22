@@ -6,7 +6,7 @@
 let a = prompt("What is your  name ");
 let b = prompt("what is your age ");
 let c = prompt("what is your fav color");
-console.log(a + " is " + b + " years ols and " + c + " fav color ");
+console.log(a + " is " + b + " years old and " + c + " fav color ");
 
 // asychronous programing
 setTimeout(() => {

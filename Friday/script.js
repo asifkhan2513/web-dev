@@ -7,8 +7,8 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 const  recognition = new SpeechRecognition();
 
 // sr start
-recognition.onstart = function (){
-
+recognition.onstart = function (event){
+    console.log(event)
     console.log("Recognition started");
 }
 
@@ -17,7 +17,6 @@ recognition.onended = function (event){
  let current = event.resultIndex;
  let transcript = event.result[current][0].transcript;
  console.log(transcript);
-
     console.log("Recognition finished");
 }
 
@@ -27,7 +26,7 @@ recognition.onended = function (event){
 strBtn.addEventListener("click" , ()=>{
     recognition.onstart()
 })
-
+    
 endBtn.addEventListener("click", ()=>{
     recognition.onended();
 })
@@ -45,6 +44,7 @@ speech.voice = allVoices[36];
     window.speechSynthesis.speak(speech);
     console.log("speaking logout")
 }
+
 speakBtn.addEventListener("click", ()=>{   
-    readOut("HEY MY NAME IS ASIF KHAN") ;
+    readOut("my name is asif khan")
  } )
