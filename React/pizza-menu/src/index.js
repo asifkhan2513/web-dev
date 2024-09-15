@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
+import "./locomotive-scroll.css";
+import { useEffect, useRef } from "react";
+import LocomotiveScroll from "locomotive-scroll";
 const pizzaData = [
   {
     name: "Focaccia",
@@ -48,8 +50,15 @@ const pizzaData = [
 ];
 
 function App() {
+  const scrollRef = useRef(null);
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+    });
+  });
   return (
-    <div className="container">
+    <div className="container scroll-container" ref={scrollRef}>
       <Header />
       <Menu />
       <Footer />

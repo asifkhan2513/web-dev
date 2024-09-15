@@ -27,7 +27,7 @@ function App() {
       <input
         type="text"
         value={text}
-        placeholder="enter soje value"
+        placeholder="enter any value"
         onChange={(e) => setText(e.target.value)}
       />
       <button onClick={handleSubmit}>click me</button>
